@@ -171,6 +171,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +236,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Movie\Create.cshtml" />
+    <Content Include="Views\Movie\Details.cshtml" />
+    <Content Include="Views\Movie\Edit.cshtml" />
+    <Content Include="Views\Movie\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -256,6 +262,14 @@
     <ProjectReference Include="..\MVC.Data\MVC.Data.csproj">
       <Project>{3F023671-D54B-405E-8EF1-1BBDF2288CAB}</Project>
       <Name>MVC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC.Models\MVC.Models.csproj">
+      <Project>{c668be27-3ab3-4c3a-b0d4-37cf16c83cdb}</Project>
+      <Name>MVC.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC.Services\MVC.Services.csproj">
+      <Project>{645d9057-eb28-4711-80bc-aec590361bf5}</Project>
+      <Name>MVC.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -51,11 +51,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Movie\MovieCreate.cs" />
+    <Compile Include="Movie\MovieDetails.cs" />
+    <Compile Include="Movie\MovieEdit.cs" />
+    <Compile Include="Movie\MovieListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC.Data\MVC.Data.csproj">
+      <Project>{3f023671-d54b-405e-8ef1-1bbdf2288cab}</Project>
+      <Name>MVC.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

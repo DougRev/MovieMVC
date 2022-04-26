@@ -32,7 +32,7 @@ namespace MVC.Data
             return new ApplicationDbContext();
         }
 
-       // public DbSet<Note> Notes { get; set; }
+        public DbSet<Movie> Movies { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
